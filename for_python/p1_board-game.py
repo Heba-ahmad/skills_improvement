@@ -27,8 +27,8 @@ ship_col = random_col(board)
 print ship_row
 print ship_col
 #create for loop to allow the player to make up to 5 guesses
-for turn in range(6):
-    print "Turn1", turn +1
+for turn in range(3):
+    print "Turn{}".format(turn +1)
 #the code to allow the player to guess where it is:
     guess_row = int(raw_input("Guess Row: "))
     guess_col = int(raw_input("Guess Col: "))
@@ -46,7 +46,7 @@ for turn in range(6):
         else:
             print "you missed the battleship"
             board[guess_row][guess_col] = "X"
-        if turn == 5:
+        if turn == 2:
             print "Game OVER"
             board[ship_row][ship_col]= "$"
         print_board(board)
