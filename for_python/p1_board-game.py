@@ -27,7 +27,7 @@ ship_col = random_col(board)
 print ship_row
 print ship_col
 #create for loop to allow the player to make up to 5 guesses
-for turn in range(3):
+for turn in range(2):
     print "Turn{}".format(turn +1)
 #the code to allow the player to guess where it is:
     guess_row = int(raw_input("Guess Row: "))
